@@ -372,21 +372,26 @@ def build_coauthor_graph(works, palette):
     return svg, _legend(legend_items), len(nodes), len(edges)
 
 
-def paper_card(p, badge_label=None):
-    featured = badge_label is not None
+def paper_card(p, badge_labels=None):
+    labels = badge_labels or []
+    if isinstance(labels, str):
+        labels = [labels]
+    featured = bool(labels)
     doi = p.get("url") or p.get("doi") or ""
     title = esc(p["title"])
     title_html = f'<a href="{esc(doi)}" target="_blank" rel="noopener">{title}</a>' if doi else title
     authors = " · ".join(
         (f'<span class="me">{esc(a)}</span>' if is_me(a) else esc(a))
         for a in p.get("authors", []))
-    badge = f'<span class="badge">{esc(badge_label)}</span>' if featured else ""
+    badges = "".join(f'<span class="badge">{esc(l)}</span>' for l in labels)
+    badge_row = f'<div class="badges">{badges}</div>' if badges else ""
     venue = esc(p["venue"])
     return f'''<article class="card{' featured' if featured else ''}">
   <div class="card-head">
-    <h3>{title_html}{badge}</h3>
+    <h3>{title_html}</h3>
     <span class="cites" title="citations">{p['cited_by_count']}</span>
   </div>
+  {badge_row}
   <div class="meta"><span class="venue">{venue}</span><span class="year">{p['year']}</span></div>
   <div class="authors">{authors}</div>
 </article>'''
@@ -401,14 +406,14 @@ def main():
     most = max(works, key=lambda p: p["cited_by_count"])
     updated = datetime.date.today().isoformat()
 
-    # Featured papers -> badge label
-    featured_labels = {most["id"]: "most cited"}
+    # Featured papers -> list of badge labels
+    featured_labels = {most["id"]: ["most cited", "first de novo macro-scale material"]}
     first_paper = next(
         (p for p in works if p["title"].startswith(
             "Patterned electrode vertical field effect transistor fabricated")),
         None)
     if first_paper:
-        featured_labels[first_paper["id"]] = "first vertical OFET"
+        featured_labels[first_paper["id"]] = ["first vertical OFET"]
 
     # two most-cited papers -> independent overlay curves
     top2 = sorted(works, key=lambda p: p["cited_by_count"], reverse=True)[:2]
@@ -551,9 +556,10 @@ def main():
   .card h3{{font-size:1.04rem;font-weight:600;margin:0;line-height:1.36}}
   .card h3 a{{color:var(--ink)}}
   .card h3 a:hover{{color:var(--accent)}}
+  .badges{{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0 0}}
   .badge{{font-family:var(--mono);font-size:.6rem;text-transform:uppercase;
     letter-spacing:.07em;background:var(--accent);color:#fff;border-radius:5px;
-    padding:2px 7px;margin-left:8px;vertical-align:middle;white-space:nowrap;font-weight:600}}
+    padding:3px 8px;white-space:nowrap;font-weight:600}}
   .cites{{font-family:var(--mono);font-size:1.08rem;font-weight:600;color:var(--accent);
     flex:none;font-variant-numeric:tabular-nums}}
   .cites::after{{content:" cites";font-size:.6rem;color:var(--muted);font-weight:400}}

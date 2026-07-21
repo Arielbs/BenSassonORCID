@@ -42,6 +42,21 @@ Live page: https://arielbs.github.io/BenSassonORCID/ — 15 papers, 712 citation
 two eras, cumulative-citation chart, light/dark toggle. Regenerate anytime with
 `python -X utf8 fetch_papers.py && python -X utf8 build_page.py`.
 
+## Enhancements (post-launch, 2026-07-21)
+
+- Citation chart: overlay independent cumulative curves for the two most-cited
+  papers; each curve starts at its publication year (no misleading pre-pub zeros).
+- New **Publications scatter** (x=year, y=citations) colored by research program
+  (organic electronics vs protein design). Dots are clickable → compact info box.
+- New **Co-authors scatter** (x=first collaboration year, y=papers together,
+  size=papers) colored by institution (OpenAlex institution = proxy for lab).
+  Clickable dots. Needed new fetch fields: `field`/`topic`, per-author
+  `institutions` — see `fetch_papers.py`.
+- Design-quality pass using the `dataviz` skill: ran its colorblind-safety
+  validator (palette passes all six checks, light + dark); added surface rings on
+  scatter marks, x-axis titles, recessive gridlines; refined stat cards, header
+  pills, card hover, elevation, and type scale.
+
 ## Design decisions (from interview 2026-07-21)
 
 - **Style:** lab / technical — data-forward, mono accents, restrained.

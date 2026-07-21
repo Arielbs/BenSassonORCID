@@ -25,6 +25,13 @@ ACCENT_DARK = "#5aa9e6"     # deep blue (dark mode, lighter for contrast)
 # categorical palette (readable on both light and dark panels)
 PALETTE = ["#1668b0", "#d97706", "#0f9d9d", "#7c3aed", "#c02662",
            "#2ca24c", "#b45309", "#0891b2"]
+# Okabe-Ito colorblind-safe palette for the co-authorship network (validated
+# all-pairs with dataviz/scripts/validate_palette.js: normal-vision floor 15.6,
+# CVD in the legal band given the graph's spatial + label secondary encoding).
+# Order chosen so ranks 2 (Technion, amber) and 6 (Tel Aviv, sky) — the two
+# institutions that share the organic-electronics cluster — get the most
+# distinct hues rather than the two warm ones.
+NET_PALETTE = ["#0072B2", "#E69F00", "#009E73", "#CC79A7", "#D55E00", "#56B4E9"]
 
 def force_layout(n, edges, W, H, iters=700):
     """Deterministic force-directed layout, computed server-side so the graph
@@ -292,7 +299,13 @@ def build_coauthor_graph(works, palette):
         return insts[nm].most_common(1)[0][0] if insts[nm] else "Unspecified"
 
     lab_count = Counter(lab_of(nm) for nm in n_papers)
-    top_labs = [l for l, _ in lab_count.most_common() if l != "Unspecified"][:6]
+    ranked = [l for l, _ in lab_count.most_common() if l != "Unspecified"]
+    top_labs = ranked[:6]
+    # Always name Tel Aviv University if present (Ariel's early collaborators),
+    # even if it ties out of the top 6 by count.
+    TAU = "Tel Aviv University"
+    if TAU in ranked and TAU not in top_labs:
+        top_labs = top_labs[:5] + [TAU]
     color_of = {l: palette[i % len(palette)] for i, l in enumerate(top_labs)}
     other_color = "#8a94a6"
 
@@ -415,7 +428,7 @@ def main():
         for i, p in enumerate(top2)]
     chart_svg, chart_legend, _ = build_chart(works, ACCENT, highlights)
     pub_svg, pub_legend = build_pub_scatter(works)
-    co_svg, co_legend, n_coauthors, n_edges = build_coauthor_graph(works, PALETTE)
+    co_svg, co_legend, n_coauthors, n_edges = build_coauthor_graph(works, NET_PALETTE)
 
     # links
     links = [f'<a href="{ORCID_URL}" target="_blank" rel="noopener">ORCID</a>']

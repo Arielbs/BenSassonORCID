@@ -29,10 +29,18 @@ be shared.
       **Kept 15 unique works, 712 citations** (13 articles, 1 conference paper,
       1 conference abstract). Two eras: organic FETs/device physics 2009–2015,
       protein materials design 2021–2025.
-- [ ] Design interview (~10 questions) → fold answers in here → approve.
-- [ ] Build `index.html`, review in browser.
-- [ ] Publish with GitHub Pages, get live URL.
-- [ ] Mark complete, final commit.
+- [x] Design interview (3 rounds) → folded into design decisions below → approved.
+- [x] Build `index.html` via `build_page.py`, reviewed in browser.
+- [x] Refinements: added Google Scholar link, new intro sentence, second
+      highlight ("first vertical OFET") on the 2009 block-copolymer paper.
+- [x] Publish with GitHub Pages. **LIVE: https://arielbs.github.io/BenSassonORCID/**
+- [x] Marked complete, final commit.
+
+## Status: COMPLETE (2026-07-21)
+
+Live page: https://arielbs.github.io/BenSassonORCID/ — 15 papers, 712 citations,
+two eras, cumulative-citation chart, light/dark toggle. Regenerate anytime with
+`python -X utf8 fetch_papers.py && python -X utf8 build_page.py`.
 
 ## Design decisions (from interview 2026-07-21)
 

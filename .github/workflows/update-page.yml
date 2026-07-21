@@ -1,0 +1,53 @@
+name: Update publications page
+
+# Keeps the page current on its own: re-fetch from OpenAlex, rebuild index.html,
+# and commit any changes. Pushing to `main` makes GitHub Pages republish.
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC. (GitHub may delay scheduled runs by a few
+    # minutes; times are always UTC.)
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}   # also lets you run it on demand from the Actions tab
+
+# Allow the job's GITHUB_TOKEN to push the refreshed files back to the repo.
+permissions:
+  contents: write
+
+# Never let two refreshes run at once.
+concurrency:
+  group: update-page
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # fetch_papers.py and build_page.py use only the Python standard library,
+      # so there is nothing to pip install.
+      - name: Fetch latest papers from OpenAlex
+        run: python -X utf8 fetch_papers.py
+
+      - name: Rebuild the page
+        run: python -X utf8 build_page.py
+
+      - name: Commit and push if anything changed
+        run: |
+          if [ -n "$(git status --porcelain index.html papers.json papers.csv)" ]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add index.html papers.json papers.csv
+            git commit -m "chore: weekly refresh of publications from OpenAlex"
+            git push
+            echo "Page updated and pushed — GitHub Pages will republish."
+          else
+            echo "No changes — publications and citation counts are already up to date."
+          fi

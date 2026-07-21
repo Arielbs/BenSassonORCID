@@ -1,0 +1,6 @@
+# Excluded works (dropped as duplicates of published papers).
+# One OpenAlex work id or DOI per line. Re-run of fetch drops these.
+w4395090209  # preprint 2024 — Proofreading and single-molecule sensitivity in T-cell 
+w4221112304  # preprint 2022 — Induction of cortical Par complex polarity by designed 
+w3135859467  # erratum 2021 — Author Correction: Design of biologically active binary
+w3087364502  # preprint 2020 — Design of Biologically Active Binary Protein 2D Materia

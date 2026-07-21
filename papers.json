@@ -1,0 +1,442 @@
+[
+  {
+    "id": "w4410890106",
+    "title": "Proofreading and single-molecule sensitivity in T cell receptor signaling by condensate nucleation",
+    "year": 2025,
+    "date": "2025-05-30",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "type": "article",
+    "doi": "https://doi.org/10.1073/pnas.2422787122",
+    "url": "https://doi.org/10.1073/pnas.2422787122",
+    "cited_by_count": 7,
+    "counts_by_year": {
+      "2026": 3,
+      "2025": 4
+    },
+    "authors": [
+      "William L. White",
+      "Hailemikael K. Yirdaw",
+      "Ariel J. Ben‐Sasson",
+      "Jay T. Groves",
+      "David Baker",
+      "Hao Yuan Kueh"
+    ]
+  },
+  {
+    "id": "w4387131807",
+    "title": "Synthetic Par polarity induces cytoskeleton asymmetry in unpolarized mammalian cells",
+    "year": 2023,
+    "date": "2023-09-28",
+    "venue": "Cell",
+    "type": "article",
+    "doi": "https://doi.org/10.1016/j.cell.2023.08.034",
+    "url": "https://doi.org/10.1016/j.cell.2023.08.034",
+    "cited_by_count": 35,
+    "counts_by_year": {
+      "2026": 9,
+      "2025": 10,
+      "2024": 16
+    },
+    "authors": [
+      "Joseph L. Watson",
+      "Lara K. Krüger",
+      "Ariel J. Ben‐Sasson",
+      "Alice Bittleston",
+      "Marta N. Shahbazi",
+      "Vicente J. Planelles-Herrero",
+      "Joseph E. Chambers",
+      "James D. Manton",
+      "David Baker",
+      "Emmanuel Derivery"
+    ]
+  },
+  {
+    "id": "w4322769977",
+    "title": "Protein Design Using Physics Informed Neural Networks",
+    "year": 2023,
+    "date": "2023-03-01",
+    "venue": "Biomolecules",
+    "type": "article",
+    "doi": "https://doi.org/10.3390/biom13030457",
+    "url": "https://doi.org/10.3390/biom13030457",
+    "cited_by_count": 14,
+    "counts_by_year": {
+      "2026": 4,
+      "2025": 5,
+      "2024": 3,
+      "2023": 2
+    },
+    "authors": [
+      "Sara Ibrahim Omar",
+      "Chen Keasar",
+      "Ariel J. Ben‐Sasson",
+      "Eldad Haber"
+    ]
+  },
+  {
+    "id": "w4223527381",
+    "title": "Precision materials: Computational design methods of accurate protein materials",
+    "year": 2022,
+    "date": "2022-04-12",
+    "venue": "Current Opinion in Structural Biology",
+    "type": "article",
+    "doi": "https://doi.org/10.1016/j.sbi.2022.102367",
+    "url": "https://doi.org/10.1016/j.sbi.2022.102367",
+    "cited_by_count": 6,
+    "counts_by_year": {
+      "2025": 1,
+      "2024": 4,
+      "2023": 1
+    },
+    "authors": [
+      "Shunzhi Wang",
+      "Ariel J. Ben‐Sasson"
+    ]
+  },
+  {
+    "id": "w3120712987",
+    "title": "Design of biologically active binary protein 2D materials",
+    "year": 2021,
+    "date": "2021-01-06",
+    "venue": "Nature",
+    "type": "article",
+    "doi": "https://doi.org/10.1038/s41586-020-03120-8",
+    "url": "https://doi.org/10.1038/s41586-020-03120-8",
+    "cited_by_count": 146,
+    "counts_by_year": {
+      "2026": 12,
+      "2025": 23,
+      "2024": 26,
+      "2023": 26,
+      "2022": 31,
+      "2021": 28
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Joseph L. Watson",
+      "William Sheffler",
+      "Matthew C. Johnson",
+      "Alice Bittleston",
+      "Logeshwaran Somasundaram",
+      "Justin Decarreau",
+      "Fang Jiao",
+      "Jiajun Chen",
+      "Ioanna Mela",
+      "Andrew A. Drabek",
+      "Sanchez M. Jarrett",
+      "Stephen C. Blacklow",
+      "Clemens F. Kaminski",
+      "Greg L. Hura",
+      "James J. De Yoreo",
+      "Justin M. Kollman",
+      "Hannele Ruohola‐Baker",
+      "Emmanuel Derivery",
+      "David Baker"
+    ]
+  },
+  {
+    "id": "w2045482999",
+    "title": "Self-Assembled Metallic Nanowire-Based Vertical Organic Field-Effect Transistor",
+    "year": 2015,
+    "date": "2015-01-20",
+    "venue": "ACS Applied Materials & Interfaces",
+    "type": "article",
+    "doi": "https://doi.org/10.1021/am505174p",
+    "url": "https://doi.org/10.1021/am505174p",
+    "cited_by_count": 67,
+    "counts_by_year": {
+      "2026": 3,
+      "2025": 3,
+      "2024": 5,
+      "2023": 3,
+      "2022": 5,
+      "2021": 6,
+      "2020": 10,
+      "2019": 9,
+      "2018": 6,
+      "2017": 8,
+      "2016": 6,
+      "2015": 3
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Daniel Azulai",
+      "Hagit Gilon",
+      "Antonio Facchetti",
+      "Gil Markovich",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w1975730603",
+    "title": "The Mechanism of Operation of Lateral and Vertical Organic Field Effect Transistors",
+    "year": 2014,
+    "date": "2014-06-01",
+    "venue": "Israel Journal of Chemistry",
+    "type": "article",
+    "doi": "https://doi.org/10.1002/ijch.201400040",
+    "url": "https://doi.org/10.1002/ijch.201400040",
+    "cited_by_count": 42,
+    "counts_by_year": {
+      "2026": 1,
+      "2024": 2,
+      "2022": 2,
+      "2021": 4,
+      "2020": 2,
+      "2019": 5,
+      "2018": 10,
+      "2017": 8,
+      "2016": 5,
+      "2015": 3
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Michael Greenman",
+      "Yohai Roichman",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2169426657",
+    "title": "Low-Temperature Molecular Vapor Deposition of Ultrathin Metal Oxide Dielectric for Low-Voltage Vertical Organic Field Effect Transistors",
+    "year": 2013,
+    "date": "2013-03-13",
+    "venue": "ACS Applied Materials & Interfaces",
+    "type": "article",
+    "doi": "https://doi.org/10.1021/am3026773",
+    "url": "https://doi.org/10.1021/am3026773",
+    "cited_by_count": 31,
+    "counts_by_year": {
+      "2026": 2,
+      "2023": 2,
+      "2022": 3,
+      "2021": 1,
+      "2020": 6,
+      "2019": 4,
+      "2018": 2,
+      "2017": 3,
+      "2016": 2,
+      "2015": 3,
+      "2014": 2,
+      "2013": 1
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Guy Ankonina",
+      "Michael Greenman",
+      "Michael T. Grimes",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2065184292",
+    "title": "Fast switching characteristics in vertical organic field effect transistors",
+    "year": 2013,
+    "date": "2013-08-12",
+    "venue": "Applied Physics Letters",
+    "type": "article",
+    "doi": "https://doi.org/10.1063/1.4818585",
+    "url": "https://doi.org/10.1063/1.4818585",
+    "cited_by_count": 30,
+    "counts_by_year": {
+      "2026": 2,
+      "2025": 2,
+      "2024": 1,
+      "2023": 2,
+      "2022": 1,
+      "2020": 3,
+      "2019": 6,
+      "2018": 3,
+      "2017": 4,
+      "2016": 3,
+      "2015": 2,
+      "2014": 1
+    },
+    "authors": [
+      "Michael Greenman",
+      "Ariel J. Ben‐Sasson",
+      "Zhihua Chen",
+      "Antonio Facchetti",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2313488304",
+    "title": "Unraveling the Physics of Vertical Organic Field Effect Transistors through Nanoscale Engineering of a Self-Assembled Transparent Electrode",
+    "year": 2012,
+    "date": "2012-08-30",
+    "venue": "Nano Letters",
+    "type": "article",
+    "doi": "https://doi.org/10.1021/nl302163q",
+    "url": "https://doi.org/10.1021/nl302163q",
+    "cited_by_count": 92,
+    "counts_by_year": {
+      "2026": 3,
+      "2025": 6,
+      "2024": 6,
+      "2023": 4,
+      "2022": 7,
+      "2021": 8,
+      "2020": 11,
+      "2019": 10,
+      "2018": 5,
+      "2017": 7,
+      "2016": 10,
+      "2015": 5,
+      "2014": 8,
+      "2013": 2
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2021647912",
+    "title": "Solution-processed ambipolar vertical organic field effect transistor",
+    "year": 2012,
+    "date": "2012-06-25",
+    "venue": "Applied Physics Letters",
+    "type": "article",
+    "doi": "https://doi.org/10.1063/1.4731774",
+    "url": "https://doi.org/10.1063/1.4731774",
+    "cited_by_count": 50,
+    "counts_by_year": {
+      "2023": 3,
+      "2022": 4,
+      "2021": 3,
+      "2020": 6,
+      "2019": 3,
+      "2018": 7,
+      "2017": 2,
+      "2016": 8,
+      "2015": 1,
+      "2014": 6,
+      "2013": 5,
+      "2012": 2
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Zhihua Chen",
+      "Antonio Facchetti",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2051869034",
+    "title": "Patterned electrode vertical field effect transistor: Theory and experiment",
+    "year": 2011,
+    "date": "2011-08-15",
+    "venue": "Journal of Applied Physics",
+    "type": "article",
+    "doi": "https://doi.org/10.1063/1.3622291",
+    "url": "https://doi.org/10.1063/1.3622291",
+    "cited_by_count": 78,
+    "counts_by_year": {
+      "2026": 3,
+      "2025": 3,
+      "2024": 4,
+      "2023": 9,
+      "2022": 4,
+      "2021": 4,
+      "2020": 8,
+      "2019": 6,
+      "2018": 7,
+      "2017": 11,
+      "2016": 3,
+      "2015": 4,
+      "2014": 3,
+      "2013": 4,
+      "2012": 4
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w1972703886",
+    "title": "Patterned electrode vertical OFET: analytical description, switching mechanisms, and optimization rules",
+    "year": 2011,
+    "date": "2011-09-07",
+    "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+    "type": "conference-paper",
+    "doi": "https://doi.org/10.1117/12.893455",
+    "url": "https://doi.org/10.1117/12.893455",
+    "cited_by_count": 19,
+    "counts_by_year": {
+      "2024": 2,
+      "2022": 1,
+      "2021": 1,
+      "2020": 1,
+      "2019": 2,
+      "2017": 3,
+      "2016": 1,
+      "2015": 2,
+      "2014": 1,
+      "2013": 2,
+      "2012": 3
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2070048245",
+    "title": "Patterned electrode vertical field effect transistor fabricated using block copolymer nanotemplates",
+    "year": 2009,
+    "date": "2009-11-23",
+    "venue": "Applied Physics Letters",
+    "type": "article",
+    "doi": "https://doi.org/10.1063/1.3266855",
+    "url": "https://doi.org/10.1063/1.3266855",
+    "cited_by_count": 95,
+    "counts_by_year": {
+      "2026": 3,
+      "2025": 4,
+      "2024": 2,
+      "2023": 3,
+      "2022": 9,
+      "2021": 5,
+      "2020": 8,
+      "2019": 4,
+      "2018": 11,
+      "2017": 11,
+      "2016": 4,
+      "2015": 5,
+      "2014": 4,
+      "2013": 4,
+      "2012": 8
+    },
+    "authors": [
+      "Ariel J. Ben‐Sasson",
+      "Eran Avnon",
+      "Elina Ploshnik",
+      "Oded Globerman",
+      "Roy Shenhar",
+      "Gitti L. Frey",
+      "Nir Tessler"
+    ]
+  },
+  {
+    "id": "w2742122180",
+    "title": "Engineering Approach to Materials and Devices Development",
+    "year": 2009,
+    "date": "2009-07-10",
+    "venue": "ECS Meeting Abstracts",
+    "type": "conference-abstract",
+    "doi": "https://doi.org/10.1149/ma2009-02/28/2248",
+    "url": "https://doi.org/10.1149/ma2009-02/28/2248",
+    "cited_by_count": 0,
+    "counts_by_year": {},
+    "authors": [
+      "Nir Tessler",
+      "Ariel J. Ben‐Sasson",
+      "Nir Yaacobi",
+      "Eran Avnon",
+      "Michal Soreni",
+      "Yoav Eichen"
+    ]
+  }
+]

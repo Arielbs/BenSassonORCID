@@ -8,6 +8,7 @@ Run with:  python -X utf8 build_page.py
 import datetime
 import html
 import json
+import math
 
 # --- Page config -----------------------------------------------------------
 NAME = "Ariel J. Ben-Sasson"
@@ -24,6 +25,56 @@ ACCENT_DARK = "#5aa9e6"     # deep blue (dark mode, lighter for contrast)
 # categorical palette (readable on both light and dark panels)
 PALETTE = ["#1668b0", "#d97706", "#0f9d9d", "#7c3aed", "#c02662",
            "#2ca24c", "#b45309", "#0891b2"]
+
+def force_layout(n, edges, W, H, iters=700):
+    """Deterministic force-directed layout, computed server-side so the graph
+    renders as plain SVG (no JavaScript needed). Returns list of (x, y).
+
+    Model: capped repulsion between all nodes + springs on edges (which also
+    push apart when closer than the rest length) + light gravity + speed cap +
+    in-bounds clamp. Disconnected communities separate into distinct clusters."""
+    m = 30
+    x0, y0, x1, y1 = m, m, W - m, H - m
+    bw, bh, cx, cy = x1 - x0, y1 - y0, W / 2, H / 2
+    GA = 2.399963229  # golden angle → even initial spread, no stacking
+    px, py, vx, vy = [], [], [0.0] * n, [0.0] * n
+    for i in range(n):
+        rad = math.sqrt((i + 0.5) / n)
+        px.append(cx + math.cos(i * GA) * rad * bw * 0.48)
+        py.append(cy + math.sin(i * GA) * rad * bh * 0.48)
+    kRep, fMax, Ld, damp, vmax, grav = 2700.0, 52.0, 52.0, 0.9, 16.0, 0.004
+    for it in range(iters):
+        cool = 1 - (it / iters) * 0.55
+        for i in range(n):
+            for j in range(i + 1, n):
+                dx, dy = px[i] - px[j], py[i] - py[j]
+                d = math.hypot(dx, dy) or 0.1
+                dd = 8.0 if d < 8 else d
+                f = kRep / (dd * dd)
+                if f > fMax:
+                    f = fMax
+                ux, uy = dx / d, dy / d
+                vx[i] += f * ux; vy[i] += f * uy
+                vx[j] -= f * ux; vy[j] -= f * uy
+        for e in edges:
+            a, b, w = e["s"], e["t"], e["w"]
+            dx, dy = px[b] - px[a], py[b] - py[a]
+            d = math.hypot(dx, dy) or 0.1
+            ux, uy = dx / d, dy / d
+            f = 0.02 * (d - Ld) * (1 + (w - 1) * 0.5)
+            vx[a] += f * ux; vy[a] += f * uy
+            vx[b] -= f * ux; vy[b] -= f * uy
+        for i in range(n):
+            vx[i] += (cx - px[i]) * grav
+            vy[i] += (cy - py[i]) * grav
+            vx[i] *= damp; vy[i] *= damp
+            sp = math.hypot(vx[i], vy[i])
+            if sp > vmax:
+                vx[i] *= vmax / sp; vy[i] *= vmax / sp
+            px[i] += vx[i] * cool; py[i] += vy[i] * cool
+            px[i] = min(max(px[i], x0), x1)
+            py[i] = min(max(py[i], y0), y1)
+    return list(zip(px, py))
 
 ERAS = [
     ("Protein materials design", "2021–2025", lambda y: y and y >= 2020),
@@ -210,15 +261,19 @@ def build_pub_scatter(works):
     return svg, _legend([(color_of[k], k) for k in order])
 
 
-def build_coauthor_scatter(works, palette):
-    """Scatter of co-authors: x=first collaboration year, y=papers together,
-    size=papers together, colored by institution (proxy for lab)."""
+def build_coauthor_graph(works, palette):
+    """Co-authorship network: nodes = co-authors (sized by shared papers with
+    Ariel, colored by institution), edges = pairs of co-authors weighted by how
+    many papers they share. Positions are solved by a force layout in-browser;
+    here we just emit the node/edge data + an empty <svg> for the JS to fill."""
     from collections import Counter, defaultdict
     n_papers = Counter()
     insts = defaultdict(Counter)
     first_year = {}
+    pair = Counter()
     for p in works:
         yr = p["year"]
+        names = [a["name"] for a in p.get("authorships", []) if not is_me(a["name"])]
         for a in p.get("authorships", []):
             nm = a["name"]
             if is_me(nm):
@@ -228,69 +283,80 @@ def build_coauthor_scatter(works, palette):
                 insts[nm][inst] += 1
             if yr:
                 first_year[nm] = min(first_year.get(nm, 9999), yr)
+        uniq = sorted(set(names))
+        for i in range(len(uniq)):
+            for j in range(i + 1, len(uniq)):
+                pair[(uniq[i], uniq[j])] += 1
 
     def lab_of(nm):
         return insts[nm].most_common(1)[0][0] if insts[nm] else "Unspecified"
 
-    # rank institutions; top ones get their own color, rest -> "Other institutions"
     lab_count = Counter(lab_of(nm) for nm in n_papers)
     top_labs = [l for l, _ in lab_count.most_common() if l != "Unspecified"][:6]
     color_of = {l: palette[i % len(palette)] for i, l in enumerate(top_labs)}
-    OTHER = "Other institutions"
     other_color = "#8a94a6"
 
-    W, H = 720, 360
-    ml, mr, mt, mb = 52, 16, 16, 40
-    pw, ph = W - ml - mr, H - mt - mb
-    years = [y for y in first_year.values() if y < 9999]
-    xmin, xmax = min(years), max(years)
-    ymax = max(n_papers.values())
-    ymax = ymax + 1
+    def surname(nm):
+        parts = nm.replace("‐", "-").replace("‑", "-").split()
+        return parts[-1] if parts else nm
 
-    def X(yr):
-        return ml + pw * (yr - xmin) / (xmax - xmin) if xmax > xmin else ml + pw / 2
-
-    def Y(c):
-        return mt + ph - ph * (c / ymax)
-
-    # deterministic jitter so equal (year, count) dots don't fully overlap
-    xticks = list(range(xmin, xmax + 1, 2))
-    dots = []
-    seen = defaultdict(int)
-    ordered = sorted(n_papers, key=lambda nm: -n_papers[nm])
-    for nm in ordered:
-        yr = first_year.get(nm)
-        if not yr or yr == 9999:
-            continue
+    names_sorted = sorted(n_papers, key=lambda nm: (-n_papers[nm], nm))
+    id_of = {nm: i for i, nm in enumerate(names_sorted)}
+    nodes = []
+    for nm in names_sorted:
         cnt = n_papers[nm]
         lab = lab_of(nm)
-        c = color_of.get(lab, other_color)
-        key = (yr, cnt)
-        k = seen[key]
-        seen[key] += 1
-        # spiral jitter around the base point
-        jx = ((k % 5) - 2) * 9
-        jy = ((k // 5) - 1) * 8
-        cx, cy = X(yr) + jx, Y(cnt) + jy
-        r = 4 + cnt * 1.6
-        sub = f'{cnt} paper{"s" if cnt > 1 else ""} together · {lab} · since {yr}'
-        dots.append(
-            f'<circle class="node" cx="{cx:.1f}" cy="{cy:.1f}" r="{r:.1f}" fill="{c}" '
-            f'fill-opacity="0.82" '
-            f'data-title="{esc(nm)}" data-sub="{esc(sub)}">'
-            f'<title>{esc(nm)}</title></circle>')
+        yr = first_year.get(nm)
+        nodes.append({
+            "id": id_of[nm],
+            "label": nm,
+            "short": surname(nm),
+            "sub": f'{cnt} paper{"s" if cnt > 1 else ""} together · {lab}'
+                   + (f' · since {yr}' if yr and yr != 9999 else ''),
+            "color": color_of.get(lab, other_color),
+            "r": round(4 + cnt * 1.7, 1),
+            "big": cnt >= 2,
+        })
+    edges = [{"s": id_of[a], "t": id_of[b], "w": w} for (a, b), w in pair.items()]
 
     legend_items = [(color_of[l], l) for l in top_labs]
     if any(lab_of(nm) not in top_labs for nm in n_papers):
-        legend_items.append((other_color, OTHER))
+        legend_items.append((other_color, "Other institutions"))
 
-    svg = f'''<svg viewBox="0 0 {W} {H}" class="chart" role="img" aria-label="Co-authors by first collaboration year and number of shared papers, colored by institution">
-  {_axes(ml, mt, pw, ph, xmin, xmax, ymax, xticks)}
-  <text x="13" y="{mt+ph/2:.0f}" class="axtitle" transform="rotate(-90 13 {mt+ph/2:.0f})" text-anchor="middle">papers together</text>
-  <text x="{ml+pw/2:.0f}" y="{H-3}" class="axtitle" text-anchor="middle">year first collaborated</text>
-  {''.join(dots)}
-</svg>'''
-    return svg, _legend(legend_items), len(n_papers)
+    # Solve the layout here (server-side) and bake positions into static SVG,
+    # so the network renders without any JavaScript.
+    W, H = 720, 470
+    pos = force_layout(len(nodes), edges, W, H)
+
+    edge_svg = []
+    for e in edges:
+        ax, ay = pos[e["s"]]
+        bx, by = pos[e["t"]]
+        w = e["w"]
+        edge_svg.append(
+            f'<line x1="{ax:.1f}" y1="{ay:.1f}" x2="{bx:.1f}" y2="{by:.1f}" '
+            f'class="edge" stroke-width="{0.5 + w * 0.9:.2f}" '
+            f'stroke-opacity="{min(0.65, 0.16 + w * 0.14):.2f}"/>')
+
+    node_svg = []
+    label_svg = []
+    for nd in nodes:
+        x, y = pos[nd["id"]]
+        node_svg.append(
+            f'<circle class="node" cx="{x:.1f}" cy="{y:.1f}" r="{nd["r"]}" '
+            f'fill="{nd["color"]}" fill-opacity="0.92" '
+            f'data-title="{esc(nd["label"])}" data-sub="{esc(nd["sub"])}">'
+            f'<title>{esc(nd["label"])}</title></circle>')
+        if nd["big"]:
+            label_svg.append(
+                f'<text class="netlab" x="{x:.1f}" y="{y - nd["r"] - 4:.1f}" '
+                f'text-anchor="middle">{esc(nd["short"])}</text>')
+
+    svg = (f'<svg class="chart net" viewBox="0 0 {W} {H}" role="img" '
+           'aria-label="Co-authorship network graph">'
+           + "".join(edge_svg) + "".join(node_svg) + "".join(label_svg)
+           + '</svg>')
+    return svg, _legend(legend_items), len(nodes), len(edges)
 
 
 def paper_card(p, badge_label=None):
@@ -349,7 +415,7 @@ def main():
         for i, p in enumerate(top2)]
     chart_svg, chart_legend, _ = build_chart(works, ACCENT, highlights)
     pub_svg, pub_legend = build_pub_scatter(works)
-    co_svg, co_legend, n_coauthors = build_coauthor_scatter(works, PALETTE)
+    co_svg, co_legend, n_coauthors, n_edges = build_coauthor_graph(works, PALETTE)
 
     # links
     links = [f'<a href="{ORCID_URL}" target="_blank" rel="noopener">ORCID</a>']
@@ -452,6 +518,10 @@ def main():
   .chart .ylab,.chart .xlab{{fill:var(--muted);font-family:var(--mono);font-size:11px}}
   .chart .axtitle{{fill:var(--muted);font-family:var(--mono);font-size:10.5px;
     text-transform:uppercase;letter-spacing:.08em}}
+  .chart.net{{min-height:340px}}
+  .chart .edge{{stroke:var(--muted);stroke-linecap:round}}
+  .chart .netlab{{fill:var(--ink);font-family:var(--mono);font-size:10px;
+    paint-order:stroke;stroke:var(--panel);stroke-width:3px;pointer-events:none}}
   .note{{font-size:.79rem;color:var(--muted);margin:12px 2px 0;line-height:1.5;max-width:70ch}}
   .era{{margin-top:44px}}
   .era-head{{display:flex;align-items:baseline;gap:12px;border-bottom:2px solid var(--accent);
@@ -527,14 +597,16 @@ def main():
   </div>
 
   <div class="panel">
-    <h2>Co-authors by lab</h2>
+    <h2>Co-authorship network</h2>
     {co_legend}
     {co_svg}
-    <p class="note">Each dot is one of {n_coauthors} co-authors — horizontal by
-      the year you first published together, vertical (and by size) by the number
-      of papers you share, colored by their institution (OpenAlex records
-      institution, the closest available proxy for lab). <strong>Click any
-      dot</strong> for the name.</p>
+    <p class="note">A force-directed graph of your {n_coauthors} co-authors
+      ({n_edges} co-authorship links). Each node is a collaborator — sized by how
+      many papers you share, colored by their institution (proxy for lab). An
+      edge joins two co-authors who appear together on a paper, and is thicker the
+      more papers they share; the layout pulls frequent collaborators together, so
+      your distinct research communities settle into separate clusters.
+      <strong>Click any node</strong> for the name.</p>
   </div>
 
   {''.join(sections)}

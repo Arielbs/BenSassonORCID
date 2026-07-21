@@ -56,6 +56,13 @@ two eras, cumulative-citation chart, light/dark toggle. Regenerate anytime with
   validator (palette passes all six checks, light + dark); added surface rings on
   scatter marks, x-axis titles, recessive gridlines; refined stat cards, header
   pills, card hover, elevation, and type scale.
+- Automation: `.github/workflows/update-page.yml` — GitHub Actions, weekly
+  (Mondays 06:00 UTC) + manual `workflow_dispatch`. Re-runs `fetch_papers.py`
+  and `build_page.py`, commits `index.html`/`papers.json`/`papers.csv` only if
+  changed (no empty commits); push to `main` triggers a Pages rebuild. Uses
+  workflow-scoped `contents: write`; stdlib-only so no dependency install.
+  Verified with a manual run (2026-07-21): all steps green, "no changes"
+  reported as expected.
 
 ## Design decisions (from interview 2026-07-21)
 

@@ -83,6 +83,15 @@ def fetch_all():
             loc = w.get("primary_location") or {}
             src = (loc.get("source") or {}) if loc else {}
             authors = [a["author"]["display_name"] for a in w.get("authorships", [])]
+            # per-author institutions (best available proxy for "lab")
+            authorships = []
+            for a in w.get("authorships", []):
+                insts = [i.get("display_name") for i in a.get("institutions", []) if i.get("display_name")]
+                authorships.append({
+                    "name": a["author"]["display_name"],
+                    "institutions": insts,
+                })
+            pt = w.get("primary_topic") or {}
             works.append({
                 "id": wid,
                 "title": w.get("title") or "(untitled)",
@@ -95,7 +104,11 @@ def fetch_all():
                 "cited_by_count": w.get("cited_by_count") or 0,
                 "counts_by_year": {c["year"]: c["cited_by_count"]
                                    for c in w.get("counts_by_year", [])},
+                "topic": pt.get("display_name") or "",
+                "subfield": ((pt.get("subfield") or {}).get("display_name")) or "",
+                "field": ((pt.get("field") or {}).get("display_name")) or "",
                 "authors": authors,
+                "authorships": authorships,
             })
         cursor = data["meta"].get("next_cursor")
         if not data["results"]:

@@ -13,6 +13,9 @@
       "2026": 3,
       "2025": 4
     },
+    "topic": "T-cell and B-cell Immunology",
+    "subfield": "Immunology",
+    "field": "Immunology and Microbiology",
     "authors": [
       "William L. White",
       "Hailemikael K. Yirdaw",
@@ -20,6 +23,45 @@
       "Jay T. Groves",
       "David Baker",
       "Hao Yuan Kueh"
+    ],
+    "authorships": [
+      {
+        "name": "William L. White",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Hailemikael K. Yirdaw",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Jay T. Groves",
+        "institutions": [
+          "Nanyang Technological University",
+          "University of California, Berkeley"
+        ]
+      },
+      {
+        "name": "David Baker",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Hao Yuan Kueh",
+        "institutions": [
+          "University of Washington"
+        ]
+      }
     ]
   },
   {
@@ -37,6 +79,9 @@
       "2025": 10,
       "2024": 16
     },
+    "topic": "Plant Molecular Biology Research",
+    "subfield": "Plant Science",
+    "field": "Agricultural and Biological Sciences",
     "authors": [
       "Joseph L. Watson",
       "Lara K. Krüger",
@@ -48,6 +93,71 @@
       "James D. Manton",
       "David Baker",
       "Emmanuel Derivery"
+    ],
+    "authorships": [
+      {
+        "name": "Joseph L. Watson",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "Lara K. Krüger",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Alice Bittleston",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "Marta N. Shahbazi",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "Vicente J. Planelles-Herrero",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "Joseph E. Chambers",
+        "institutions": [
+          "University of Cambridge"
+        ]
+      },
+      {
+        "name": "James D. Manton",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "David Baker",
+        "institutions": [
+          "Howard Hughes Medical Institute",
+          "University of Washington",
+          "University of Washington Medical Center"
+        ]
+      },
+      {
+        "name": "Emmanuel Derivery",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology",
+          "The Francis Crick Institute"
+        ]
+      }
     ]
   },
   {
@@ -66,11 +176,38 @@
       "2024": 3,
       "2023": 2
     },
+    "topic": "Protein Structure and Dynamics",
+    "subfield": "Molecular Biology",
+    "field": "Biochemistry, Genetics and Molecular Biology",
     "authors": [
       "Sara Ibrahim Omar",
       "Chen Keasar",
       "Ariel J. Ben‐Sasson",
       "Eldad Haber"
+    ],
+    "authorships": [
+      {
+        "name": "Sara Ibrahim Omar",
+        "institutions": []
+      },
+      {
+        "name": "Chen Keasar",
+        "institutions": [
+          "Ben-Gurion University of the Negev"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "University of Haifa"
+        ]
+      },
+      {
+        "name": "Eldad Haber",
+        "institutions": [
+          "University of British Columbia"
+        ]
+      }
     ]
   },
   {
@@ -88,9 +225,27 @@
       "2024": 4,
       "2023": 1
     },
+    "topic": "Protein Structure and Dynamics",
+    "subfield": "Molecular Biology",
+    "field": "Biochemistry, Genetics and Molecular Biology",
     "authors": [
       "Shunzhi Wang",
       "Ariel J. Ben‐Sasson"
+    ],
+    "authorships": [
+      {
+        "name": "Shunzhi Wang",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Ariel University",
+          "University of Haifa"
+        ]
+      }
     ]
   },
   {
@@ -111,6 +266,9 @@
       "2022": 31,
       "2021": 28
     },
+    "topic": "Monoclonal and Polyclonal Antibodies Research",
+    "subfield": "Radiology, Nuclear Medicine and Imaging",
+    "field": "Medicine",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Joseph L. Watson",
@@ -132,6 +290,133 @@
       "Hannele Ruohola‐Baker",
       "Emmanuel Derivery",
       "David Baker"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Joseph L. Watson",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "William Sheffler",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Matthew C. Johnson",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Alice Bittleston",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "Logeshwaran Somasundaram",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Justin Decarreau",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Fang Jiao",
+        "institutions": [
+          "Pacific Northwest National Laboratory"
+        ]
+      },
+      {
+        "name": "Jiajun Chen",
+        "institutions": [
+          "Pacific Northwest National Laboratory",
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Ioanna Mela",
+        "institutions": [
+          "University of Cambridge"
+        ]
+      },
+      {
+        "name": "Andrew A. Drabek",
+        "institutions": [
+          "Harvard University"
+        ]
+      },
+      {
+        "name": "Sanchez M. Jarrett",
+        "institutions": [
+          "Harvard University"
+        ]
+      },
+      {
+        "name": "Stephen C. Blacklow",
+        "institutions": [
+          "Harvard University",
+          "Dana-Farber Cancer Institute"
+        ]
+      },
+      {
+        "name": "Clemens F. Kaminski",
+        "institutions": [
+          "University of Cambridge"
+        ]
+      },
+      {
+        "name": "Greg L. Hura",
+        "institutions": [
+          "Lawrence Berkeley National Laboratory"
+        ]
+      },
+      {
+        "name": "James J. De Yoreo",
+        "institutions": [
+          "Pacific Northwest National Laboratory",
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Justin M. Kollman",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Hannele Ruohola‐Baker",
+        "institutions": [
+          "University of Washington"
+        ]
+      },
+      {
+        "name": "Emmanuel Derivery",
+        "institutions": [
+          "MRC Laboratory of Molecular Biology"
+        ]
+      },
+      {
+        "name": "David Baker",
+        "institutions": [
+          "Howard Hughes Medical Institute",
+          "University of Washington",
+          "PDL BioPharma (United States)"
+        ]
+      }
     ]
   },
   {
@@ -158,6 +443,9 @@
       "2016": 6,
       "2015": 3
     },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Daniel Azulai",
@@ -165,6 +453,44 @@
       "Antonio Facchetti",
       "Gil Markovich",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Daniel Azulai",
+        "institutions": [
+          "Tel Aviv University"
+        ]
+      },
+      {
+        "name": "Hagit Gilon",
+        "institutions": [
+          "Tel Aviv University"
+        ]
+      },
+      {
+        "name": "Antonio Facchetti",
+        "institutions": [
+          "Kyocera (United States)"
+        ]
+      },
+      {
+        "name": "Gil Markovich",
+        "institutions": [
+          "Tel Aviv University"
+        ]
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -189,11 +515,40 @@
       "2016": 5,
       "2015": 3
     },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Michael Greenman",
       "Yohai Roichman",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Michael Greenman",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Yohai Roichman",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -220,12 +575,45 @@
       "2014": 2,
       "2013": 1
     },
+    "topic": "Semiconductor materials and devices",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Guy Ankonina",
       "Michael Greenman",
       "Michael T. Grimes",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Guy Ankonina",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Michael Greenman",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Michael T. Grimes",
+        "institutions": []
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -252,12 +640,43 @@
       "2015": 2,
       "2014": 1
     },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Michael Greenman",
       "Ariel J. Ben‐Sasson",
       "Zhihua Chen",
       "Antonio Facchetti",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Michael Greenman",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Zhihua Chen",
+        "institutions": []
+      },
+      {
+        "name": "Antonio Facchetti",
+        "institutions": []
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -286,9 +705,26 @@
       "2014": 8,
       "2013": 2
     },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -315,11 +751,36 @@
       "2013": 5,
       "2012": 2
     },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Zhihua Chen",
       "Antonio Facchetti",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Zhihua Chen",
+        "institutions": []
+      },
+      {
+        "name": "Antonio Facchetti",
+        "institutions": []
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -349,9 +810,26 @@
       "2013": 4,
       "2012": 4
     },
+    "topic": "Advancements in Semiconductor Devices and Circuit Design",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -377,9 +855,26 @@
       "2013": 2,
       "2012": 3
     },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -409,6 +904,9 @@
       "2013": 4,
       "2012": 8
     },
+    "topic": "Block Copolymer Self-Assembly",
+    "subfield": "Materials Chemistry",
+    "field": "Materials Science",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Eran Avnon",
@@ -417,6 +915,50 @@
       "Roy Shenhar",
       "Gitti L. Frey",
       "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Eran Avnon",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Elina Ploshnik",
+        "institutions": [
+          "Hebrew University of Jerusalem"
+        ]
+      },
+      {
+        "name": "Oded Globerman",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Roy Shenhar",
+        "institutions": [
+          "Hebrew University of Jerusalem"
+        ]
+      },
+      {
+        "name": "Gitti L. Frey",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   },
   {
@@ -430,6 +972,9 @@
     "url": "https://doi.org/10.1149/ma2009-02/28/2248",
     "cited_by_count": 0,
     "counts_by_year": {},
+    "topic": "Manufacturing Process and Optimization",
+    "subfield": "Industrial and Manufacturing Engineering",
+    "field": "Engineering",
     "authors": [
       "Nir Tessler",
       "Ariel J. Ben‐Sasson",
@@ -437,6 +982,44 @@
       "Eran Avnon",
       "Michal Soreni",
       "Yoav Eichen"
+    ],
+    "authorships": [
+      {
+        "name": "Nir Tessler",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Nir Yaacobi",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Eran Avnon",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Michal Soreni",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Yoav Eichen",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
     ]
   }
 ]

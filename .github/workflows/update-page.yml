@@ -5,9 +5,11 @@ name: Update publications page
 
 on:
   schedule:
-    # Every Monday at 06:00 UTC. (GitHub may delay scheduled runs by a few
-    # minutes; times are always UTC.)
-    - cron: "0 6 * * 1"
+    # Every Friday at 15:00 UTC = 08:00 Pacific (PDT) / 07:00 (PST) — Friday
+    # morning in Seattle. Cron is always UTC and does not follow daylight-saving,
+    # so the local time shifts by an hour across DST. GitHub may also delay
+    # scheduled runs by a few minutes.
+    - cron: "0 15 * * 5"
   workflow_dispatch: {}   # also lets you run it on demand from the Actions tab
 
 # Allow the job's GITHUB_TOKEN to push the refreshed files back to the repo.

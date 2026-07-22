@@ -27,24 +27,28 @@
     "authorships": [
       {
         "name": "William L. White",
+        "orcid": "https://orcid.org/0009-0004-0041-2125",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Hailemikael K. Yirdaw",
+        "orcid": null,
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Jay T. Groves",
+        "orcid": "https://orcid.org/0000-0002-3037-5220",
         "institutions": [
           "Nanyang Technological University",
           "University of California, Berkeley"
@@ -52,12 +56,15 @@
       },
       {
         "name": "David Baker",
+        "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
+          "Howard Hughes Medical Institute",
           "University of Washington"
         ]
       },
       {
         "name": "Hao Yuan Kueh",
+        "orcid": "https://orcid.org/0000-0001-6272-6673",
         "institutions": [
           "University of Washington"
         ]
@@ -97,54 +104,63 @@
     "authorships": [
       {
         "name": "Joseph L. Watson",
+        "orcid": "https://orcid.org/0000-0001-5492-0249",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "Lara K. Krüger",
+        "orcid": "https://orcid.org/0000-0002-0439-951X",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Alice Bittleston",
+        "orcid": "https://orcid.org/0000-0002-1374-0222",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "Marta N. Shahbazi",
+        "orcid": "https://orcid.org/0000-0002-1599-5747",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "Vicente J. Planelles-Herrero",
+        "orcid": "https://orcid.org/0000-0002-1665-184X",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "Joseph E. Chambers",
+        "orcid": "https://orcid.org/0000-0003-4675-0053",
         "institutions": [
           "University of Cambridge"
         ]
       },
       {
         "name": "James D. Manton",
+        "orcid": "https://orcid.org/0000-0001-9260-3156",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "David Baker",
+        "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "Howard Hughes Medical Institute",
           "University of Washington",
@@ -153,6 +169,7 @@
       },
       {
         "name": "Emmanuel Derivery",
+        "orcid": "https://orcid.org/0000-0003-3927-5944",
         "institutions": [
           "MRC Laboratory of Molecular Biology",
           "The Francis Crick Institute"
@@ -188,22 +205,26 @@
     "authorships": [
       {
         "name": "Sara Ibrahim Omar",
+        "orcid": "https://orcid.org/0000-0002-0133-3531",
         "institutions": []
       },
       {
         "name": "Chen Keasar",
+        "orcid": "https://orcid.org/0000-0003-0994-1520",
         "institutions": [
           "Ben-Gurion University of the Negev"
         ]
       },
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "University of Haifa"
         ]
       },
       {
         "name": "Eldad Haber",
+        "orcid": null,
         "institutions": [
           "University of British Columbia"
         ]
@@ -235,12 +256,14 @@
     "authorships": [
       {
         "name": "Shunzhi Wang",
+        "orcid": "https://orcid.org/0000-0001-5033-7478",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Ariel University",
           "University of Haifa"
@@ -294,54 +317,63 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Joseph L. Watson",
+        "orcid": "https://orcid.org/0000-0001-5492-0249",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "William Sheffler",
+        "orcid": "https://orcid.org/0000-0002-3659-9559",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Matthew C. Johnson",
+        "orcid": "https://orcid.org/0000-0002-1477-7801",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Alice Bittleston",
+        "orcid": "https://orcid.org/0000-0002-1374-0222",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "Logeshwaran Somasundaram",
+        "orcid": "https://orcid.org/0000-0003-1924-8156",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Justin Decarreau",
+        "orcid": "https://orcid.org/0000-0001-8996-7741",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Fang Jiao",
+        "orcid": "https://orcid.org/0000-0001-5087-6228",
         "institutions": [
           "Pacific Northwest National Laboratory"
         ]
       },
       {
         "name": "Jiajun Chen",
+        "orcid": "https://orcid.org/0000-0002-4061-6219",
         "institutions": [
           "Pacific Northwest National Laboratory",
           "University of Washington"
@@ -349,24 +381,28 @@
       },
       {
         "name": "Ioanna Mela",
+        "orcid": "https://orcid.org/0000-0002-2914-9971",
         "institutions": [
           "University of Cambridge"
         ]
       },
       {
         "name": "Andrew A. Drabek",
+        "orcid": "https://orcid.org/0000-0002-8568-7133",
         "institutions": [
           "Harvard University"
         ]
       },
       {
         "name": "Sanchez M. Jarrett",
+        "orcid": "https://orcid.org/0000-0003-3533-6148",
         "institutions": [
           "Harvard University"
         ]
       },
       {
         "name": "Stephen C. Blacklow",
+        "orcid": "https://orcid.org/0000-0002-6904-1981",
         "institutions": [
           "Harvard University",
           "Dana-Farber Cancer Institute"
@@ -374,18 +410,21 @@
       },
       {
         "name": "Clemens F. Kaminski",
+        "orcid": "https://orcid.org/0000-0002-5194-0962",
         "institutions": [
           "University of Cambridge"
         ]
       },
       {
         "name": "Greg L. Hura",
+        "orcid": "https://orcid.org/0000-0003-0501-8464",
         "institutions": [
           "Lawrence Berkeley National Laboratory"
         ]
       },
       {
         "name": "James J. De Yoreo",
+        "orcid": "https://orcid.org/0000-0002-9541-733X",
         "institutions": [
           "Pacific Northwest National Laboratory",
           "University of Washington"
@@ -393,24 +432,28 @@
       },
       {
         "name": "Justin M. Kollman",
+        "orcid": "https://orcid.org/0000-0002-0350-5827",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Hannele Ruohola‐Baker",
+        "orcid": "https://orcid.org/0000-0002-5588-4531",
         "institutions": [
           "University of Washington"
         ]
       },
       {
         "name": "Emmanuel Derivery",
+        "orcid": "https://orcid.org/0000-0003-3927-5944",
         "institutions": [
           "MRC Laboratory of Molecular Biology"
         ]
       },
       {
         "name": "David Baker",
+        "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "Howard Hughes Medical Institute",
           "University of Washington",
@@ -457,36 +500,42 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Daniel Azulai",
+        "orcid": null,
         "institutions": [
           "Tel Aviv University"
         ]
       },
       {
         "name": "Hagit Gilon",
+        "orcid": null,
         "institutions": [
           "Tel Aviv University"
         ]
       },
       {
         "name": "Antonio Facchetti",
+        "orcid": "https://orcid.org/0000-0002-8175-7958",
         "institutions": [
           "Kyocera (United States)"
         ]
       },
       {
         "name": "Gil Markovich",
+        "orcid": "https://orcid.org/0000-0002-4047-189X",
         "institutions": [
           "Tel Aviv University"
         ]
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -527,24 +576,28 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Michael Greenman",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Yohai Roichman",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -588,28 +641,33 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Guy Ankonina",
+        "orcid": "https://orcid.org/0000-0002-8779-8144",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Michael Greenman",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Michael T. Grimes",
+        "orcid": null,
         "institutions": []
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -653,26 +711,31 @@
     "authorships": [
       {
         "name": "Michael Greenman",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Zhihua Chen",
+        "orcid": "https://orcid.org/0009-0008-2812-6648",
         "institutions": []
       },
       {
         "name": "Antonio Facchetti",
+        "orcid": "https://orcid.org/0000-0002-8175-7958",
         "institutions": []
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -715,12 +778,14 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -763,20 +828,24 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Zhihua Chen",
+        "orcid": "https://orcid.org/0009-0008-2812-6648",
         "institutions": []
       },
       {
         "name": "Antonio Facchetti",
+        "orcid": "https://orcid.org/0000-0002-8175-7958",
         "institutions": []
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -820,12 +889,14 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -865,12 +936,14 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -919,42 +992,49 @@
     "authorships": [
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Eran Avnon",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Elina Ploshnik",
+        "orcid": null,
         "institutions": [
           "Hebrew University of Jerusalem"
         ]
       },
       {
         "name": "Oded Globerman",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Roy Shenhar",
+        "orcid": "https://orcid.org/0000-0002-0631-1542",
         "institutions": [
           "Hebrew University of Jerusalem"
         ]
       },
       {
         "name": "Gitti L. Frey",
+        "orcid": "https://orcid.org/0000-0002-7638-4712",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
@@ -986,36 +1066,42 @@
     "authorships": [
       {
         "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Nir Yaacobi",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Eran Avnon",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Michal Soreni",
+        "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]
       },
       {
         "name": "Yoav Eichen",
+        "orcid": "https://orcid.org/0000-0002-1563-1046",
         "institutions": [
           "Technion – Israel Institute of Technology"
         ]

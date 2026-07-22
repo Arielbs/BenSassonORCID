@@ -41,12 +41,35 @@ jobs:
       - name: Rebuild the page
         run: python -X utf8 build_page.py
 
+      # Surface any papers the name guard held out (returned for the ORCID but
+      # missing your name) as a visible warning + run summary, so a possible
+      # mis-attribution never slips onto the page unnoticed.
+      - name: Report papers held out by the name guard
+        run: |
+          flagged=$(grep -vE '^[[:space:]]*#' flagged_works.txt | grep -vE '^[[:space:]]*$' || true)
+          if [ -n "$flagged" ]; then
+            {
+              echo "### ⚠️ Papers held out for review"
+              echo "Returned for this ORCID but they do **not** list your name, so they were kept off the page:"
+              echo ""
+              echo '```'
+              echo "$flagged"
+              echo '```'
+              echo "If one is genuinely yours, add its id to \`confirmed_mine.txt\`."
+            } >> "$GITHUB_STEP_SUMMARY"
+            while IFS= read -r line; do
+              [ -n "$line" ] && echo "::warning title=Possible mis-attributed paper::$line"
+            done <<< "$flagged"
+          else
+            echo "✓ Name guard: every shown work lists your name — nothing held out." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Commit and push if anything changed
         run: |
-          if [ -n "$(git status --porcelain index.html papers.json papers.csv)" ]; then
+          if [ -n "$(git status --porcelain index.html papers.json papers.csv flagged_works.txt)" ]; then
             git config user.name  "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add index.html papers.json papers.csv
+            git add index.html papers.json papers.csv flagged_works.txt
             git commit -m "chore: weekly refresh of publications from OpenAlex"
             git push
             echo "Page updated and pushed — GitHub Pages will republish."

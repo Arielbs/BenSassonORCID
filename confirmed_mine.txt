@@ -1,0 +1,7 @@
+# Allowlist for the name guard in fetch_papers.py.
+# If a paper that IS genuinely yours gets held out (e.g. OpenAlex recorded your
+# name in an unusual way), add its OpenAlex work id or DOI here — one per line —
+# to force-include it. Inline "# comments" are allowed.
+#
+# Example:
+#   w1234567890   # my paper where OpenAlex spelled my name oddly

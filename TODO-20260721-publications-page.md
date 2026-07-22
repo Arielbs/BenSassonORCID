@@ -63,6 +63,14 @@ two eras, cumulative-citation chart, light/dark toggle. Regenerate anytime with
   workflow-scoped `contents: write`; stdlib-only so no dependency install.
   Verified with a manual run (2026-07-21): all steps green, "no changes"
   reported as expected.
+- Name guard (2026-07-22): `fetch_papers.py` derives your surname from your
+  OpenAlex author record and holds out any returned work whose author list does
+  NOT contain your name (catches OpenAlex mis-links — a wrong-person paper keeps
+  the ORCID but not the name). Held-out works go to `flagged_works.txt` (tracked)
+  instead of the page; `confirmed_mine.txt` is an allowlist to force-include a
+  false positive. The workflow surfaces any held-out works as a `::warning::`
+  and a run-summary block. Unit-tested: real paper kept, "Malcolm MacCoss"-style
+  mis-link held out, name-spelling variants still match.
 
 ## Design decisions (from interview 2026-07-21)
 

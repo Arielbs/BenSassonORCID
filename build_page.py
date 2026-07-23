@@ -485,6 +485,9 @@ def main():
   .wrap{{max-width:840px;margin:0 auto;padding:52px 24px 80px}}
   a{{color:var(--accent);text-decoration:none}}
   a:hover{{text-decoration:underline}}
+  .backlink{{display:inline-block;font-family:var(--mono);font-size:.78rem;
+    color:var(--muted);margin-bottom:22px}}
+  .backlink:hover{{color:var(--accent);text-decoration:none}}
   header.top{{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;
     padding-bottom:26px;border-bottom:1px solid var(--line)}}
   h1{{font-size:2.15rem;margin:0 0 8px;letter-spacing:-.025em;line-height:1.1}}
@@ -577,6 +580,7 @@ def main():
 </head>
 <body>
 <div class="wrap">
+  <a class="backlink" href="{GITHUB_URL}">← Back to profile</a>
   <header class="top">
     <div>
       <h1>{esc(NAME)}</h1>

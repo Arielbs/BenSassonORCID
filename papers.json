@@ -605,6 +605,74 @@
     ]
   },
   {
+    "id": "w2065184292",
+    "title": "Fast switching characteristics in vertical organic field effect transistors",
+    "year": 2013,
+    "date": "2013-08-12",
+    "venue": "Applied Physics Letters",
+    "type": "article",
+    "doi": "https://doi.org/10.1063/1.4818585",
+    "url": "https://doi.org/10.1063/1.4818585",
+    "cited_by_count": 30,
+    "counts_by_year": {
+      "2026": 2,
+      "2025": 2,
+      "2024": 1,
+      "2023": 2,
+      "2022": 1,
+      "2020": 3,
+      "2019": 6,
+      "2018": 3,
+      "2017": 4,
+      "2016": 3,
+      "2015": 2,
+      "2014": 1
+    },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
+    "authors": [
+      "Michael Greenman",
+      "Ariel J. Ben‐Sasson",
+      "Zhihua Chen",
+      "Antonio Facchetti",
+      "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Michael Greenman",
+        "orcid": null,
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Zhihua Chen",
+        "orcid": "https://orcid.org/0009-0008-2812-6648",
+        "institutions": []
+      },
+      {
+        "name": "Antonio Facchetti",
+        "orcid": "https://orcid.org/0000-0002-8175-7958",
+        "institutions": []
+      },
+      {
+        "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
+    ]
+  },
+  {
     "id": "w2169426657",
     "title": "Low-Temperature Molecular Vapor Deposition of Ultrathin Metal Oxide Dielectric for Low-Voltage Vertical Organic Field Effect Transistors",
     "year": 2013,
@@ -663,74 +731,6 @@
       {
         "name": "Michael T. Grimes",
         "orcid": null,
-        "institutions": []
-      },
-      {
-        "name": "Nir Tessler",
-        "orcid": "https://orcid.org/0000-0002-5354-3231",
-        "institutions": [
-          "Technion – Israel Institute of Technology"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "w2065184292",
-    "title": "Fast switching characteristics in vertical organic field effect transistors",
-    "year": 2013,
-    "date": "2013-08-12",
-    "venue": "Applied Physics Letters",
-    "type": "article",
-    "doi": "https://doi.org/10.1063/1.4818585",
-    "url": "https://doi.org/10.1063/1.4818585",
-    "cited_by_count": 30,
-    "counts_by_year": {
-      "2026": 2,
-      "2025": 2,
-      "2024": 1,
-      "2023": 2,
-      "2022": 1,
-      "2020": 3,
-      "2019": 6,
-      "2018": 3,
-      "2017": 4,
-      "2016": 3,
-      "2015": 2,
-      "2014": 1
-    },
-    "topic": "Organic Electronics and Photovoltaics",
-    "subfield": "Electrical and Electronic Engineering",
-    "field": "Engineering",
-    "authors": [
-      "Michael Greenman",
-      "Ariel J. Ben‐Sasson",
-      "Zhihua Chen",
-      "Antonio Facchetti",
-      "Nir Tessler"
-    ],
-    "authorships": [
-      {
-        "name": "Michael Greenman",
-        "orcid": null,
-        "institutions": [
-          "Technion – Israel Institute of Technology"
-        ]
-      },
-      {
-        "name": "Ariel J. Ben‐Sasson",
-        "orcid": "https://orcid.org/0000-0003-3395-6327",
-        "institutions": [
-          "Technion – Israel Institute of Technology"
-        ]
-      },
-      {
-        "name": "Zhihua Chen",
-        "orcid": "https://orcid.org/0009-0008-2812-6648",
-        "institutions": []
-      },
-      {
-        "name": "Antonio Facchetti",
-        "orcid": "https://orcid.org/0000-0002-8175-7958",
         "institutions": []
       },
       {

@@ -8,9 +8,9 @@
     "type": "article",
     "doi": "https://doi.org/10.1073/pnas.2422787122",
     "url": "https://doi.org/10.1073/pnas.2422787122",
-    "cited_by_count": 7,
+    "cited_by_count": 8,
     "counts_by_year": {
-      "2026": 3,
+      "2026": 4,
       "2025": 4
     },
     "topic": "T-cell and B-cell Immunology",
@@ -21,7 +21,7 @@
       "Hailemikael K. Yirdaw",
       "Ariel J. Ben‐Sasson",
       "Jay T. Groves",
-      "David Baker",
+      "David A. Baker",
       "Hao Yuan Kueh"
     ],
     "authorships": [
@@ -51,11 +51,12 @@
         "orcid": "https://orcid.org/0000-0002-3037-5220",
         "institutions": [
           "Nanyang Technological University",
+          "Institute for Digital Molecular Analytics and Science",
           "University of California, Berkeley"
         ]
       },
       {
-        "name": "David Baker",
+        "name": "David A. Baker",
         "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "Howard Hughes Medical Institute",
@@ -98,7 +99,7 @@
       "Vicente J. Planelles-Herrero",
       "Joseph E. Chambers",
       "James D. Manton",
-      "David Baker",
+      "David A. Baker",
       "Emmanuel Derivery"
     ],
     "authorships": [
@@ -159,7 +160,7 @@
         ]
       },
       {
-        "name": "David Baker",
+        "name": "David A. Baker",
         "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "Howard Hughes Medical Institute",
@@ -224,7 +225,7 @@
       },
       {
         "name": "Eldad Haber",
-        "orcid": null,
+        "orcid": "https://orcid.org/0009-0008-1000-604X",
         "institutions": [
           "University of British Columbia"
         ]
@@ -296,10 +297,10 @@
       "Ariel J. Ben‐Sasson",
       "Joseph L. Watson",
       "William Sheffler",
-      "Matthew C. Johnson",
+      "Matthew Camp Johnson",
       "Alice Bittleston",
       "Logeshwaran Somasundaram",
-      "Justin Decarreau",
+      "Justin A. Decarreau",
       "Fang Jiao",
       "Jiajun Chen",
       "Ioanna Mela",
@@ -312,7 +313,7 @@
       "Justin M. Kollman",
       "Hannele Ruohola‐Baker",
       "Emmanuel Derivery",
-      "David Baker"
+      "David A. Baker"
     ],
     "authorships": [
       {
@@ -337,7 +338,7 @@
         ]
       },
       {
-        "name": "Matthew C. Johnson",
+        "name": "Matthew Camp Johnson",
         "orcid": "https://orcid.org/0000-0002-1477-7801",
         "institutions": [
           "University of Washington"
@@ -358,7 +359,7 @@
         ]
       },
       {
-        "name": "Justin Decarreau",
+        "name": "Justin A. Decarreau",
         "orcid": "https://orcid.org/0000-0001-8996-7741",
         "institutions": [
           "University of Washington"
@@ -452,12 +453,11 @@
         ]
       },
       {
-        "name": "David Baker",
+        "name": "David A. Baker",
         "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "Howard Hughes Medical Institute",
-          "University of Washington",
-          "PDL BioPharma (United States)"
+          "University of Washington"
         ]
       }
     ]
@@ -493,7 +493,7 @@
       "Ariel J. Ben‐Sasson",
       "Daniel Azulai",
       "Hagit Gilon",
-      "Antonio Facchetti",
+      "Antonio F. Facchetti",
       "Gil Markovich",
       "Nir Tessler"
     ],
@@ -520,7 +520,7 @@
         ]
       },
       {
-        "name": "Antonio Facchetti",
+        "name": "Antonio F. Facchetti",
         "orcid": "https://orcid.org/0000-0002-8175-7958",
         "institutions": [
           "Kyocera (United States)"
@@ -605,74 +605,6 @@
     ]
   },
   {
-    "id": "w2065184292",
-    "title": "Fast switching characteristics in vertical organic field effect transistors",
-    "year": 2013,
-    "date": "2013-08-12",
-    "venue": "Applied Physics Letters",
-    "type": "article",
-    "doi": "https://doi.org/10.1063/1.4818585",
-    "url": "https://doi.org/10.1063/1.4818585",
-    "cited_by_count": 30,
-    "counts_by_year": {
-      "2026": 2,
-      "2025": 2,
-      "2024": 1,
-      "2023": 2,
-      "2022": 1,
-      "2020": 3,
-      "2019": 6,
-      "2018": 3,
-      "2017": 4,
-      "2016": 3,
-      "2015": 2,
-      "2014": 1
-    },
-    "topic": "Organic Electronics and Photovoltaics",
-    "subfield": "Electrical and Electronic Engineering",
-    "field": "Engineering",
-    "authors": [
-      "Michael Greenman",
-      "Ariel J. Ben‐Sasson",
-      "Zhihua Chen",
-      "Antonio Facchetti",
-      "Nir Tessler"
-    ],
-    "authorships": [
-      {
-        "name": "Michael Greenman",
-        "orcid": null,
-        "institutions": [
-          "Technion – Israel Institute of Technology"
-        ]
-      },
-      {
-        "name": "Ariel J. Ben‐Sasson",
-        "orcid": "https://orcid.org/0000-0003-3395-6327",
-        "institutions": [
-          "Technion – Israel Institute of Technology"
-        ]
-      },
-      {
-        "name": "Zhihua Chen",
-        "orcid": "https://orcid.org/0009-0008-2812-6648",
-        "institutions": []
-      },
-      {
-        "name": "Antonio Facchetti",
-        "orcid": "https://orcid.org/0000-0002-8175-7958",
-        "institutions": []
-      },
-      {
-        "name": "Nir Tessler",
-        "orcid": "https://orcid.org/0000-0002-5354-3231",
-        "institutions": [
-          "Technion – Israel Institute of Technology"
-        ]
-      }
-    ]
-  },
-  {
     "id": "w2169426657",
     "title": "Low-Temperature Molecular Vapor Deposition of Ultrathin Metal Oxide Dielectric for Low-Voltage Vertical Organic Field Effect Transistors",
     "year": 2013,
@@ -743,6 +675,74 @@
     ]
   },
   {
+    "id": "w2065184292",
+    "title": "Fast switching characteristics in vertical organic field effect transistors",
+    "year": 2013,
+    "date": "2013-08-12",
+    "venue": "Applied Physics Letters",
+    "type": "article",
+    "doi": "https://doi.org/10.1063/1.4818585",
+    "url": "https://doi.org/10.1063/1.4818585",
+    "cited_by_count": 30,
+    "counts_by_year": {
+      "2026": 2,
+      "2025": 2,
+      "2024": 1,
+      "2023": 2,
+      "2022": 1,
+      "2020": 3,
+      "2019": 6,
+      "2018": 3,
+      "2017": 4,
+      "2016": 3,
+      "2015": 2,
+      "2014": 1
+    },
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
+    "authors": [
+      "Michael Greenman",
+      "Ariel J. Ben‐Sasson",
+      "Zhihua Chen",
+      "Antonio F. Facchetti",
+      "Nir Tessler"
+    ],
+    "authorships": [
+      {
+        "name": "Michael Greenman",
+        "orcid": null,
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Ariel J. Ben‐Sasson",
+        "orcid": "https://orcid.org/0000-0003-3395-6327",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      },
+      {
+        "name": "Zhihua Chen",
+        "orcid": "https://orcid.org/0009-0008-2812-6648",
+        "institutions": []
+      },
+      {
+        "name": "Antonio F. Facchetti",
+        "orcid": "https://orcid.org/0000-0002-8175-7958",
+        "institutions": []
+      },
+      {
+        "name": "Nir Tessler",
+        "orcid": "https://orcid.org/0000-0002-5354-3231",
+        "institutions": [
+          "Technion – Israel Institute of Technology"
+        ]
+      }
+    ]
+  },
+  {
     "id": "w2313488304",
     "title": "Unraveling the Physics of Vertical Organic Field Effect Transistors through Nanoscale Engineering of a Self-Assembled Transparent Electrode",
     "year": 2012,
@@ -751,7 +751,7 @@
     "type": "article",
     "doi": "https://doi.org/10.1021/nl302163q",
     "url": "https://doi.org/10.1021/nl302163q",
-    "cited_by_count": 94,
+    "cited_by_count": 95,
     "counts_by_year": {
       "2026": 5,
       "2025": 6,
@@ -759,7 +759,7 @@
       "2023": 4,
       "2022": 7,
       "2021": 8,
-      "2020": 11,
+      "2020": 12,
       "2019": 10,
       "2018": 5,
       "2017": 7,
@@ -801,12 +801,12 @@
     "type": "article",
     "doi": "https://doi.org/10.1063/1.4731774",
     "url": "https://doi.org/10.1063/1.4731774",
-    "cited_by_count": 50,
+    "cited_by_count": 51,
     "counts_by_year": {
       "2023": 3,
       "2022": 4,
       "2021": 3,
-      "2020": 6,
+      "2020": 7,
       "2019": 3,
       "2018": 7,
       "2017": 2,
@@ -822,7 +822,7 @@
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Zhihua Chen",
-      "Antonio Facchetti",
+      "Antonio F. Facchetti",
       "Nir Tessler"
     ],
     "authorships": [
@@ -839,7 +839,7 @@
         "institutions": []
       },
       {
-        "name": "Antonio Facchetti",
+        "name": "Antonio F. Facchetti",
         "orcid": "https://orcid.org/0000-0002-8175-7958",
         "institutions": []
       },

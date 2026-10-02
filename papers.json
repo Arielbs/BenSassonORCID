@@ -164,16 +164,14 @@
         "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "Howard Hughes Medical Institute",
-          "University of Washington",
-          "University of Washington Medical Center"
+          "University of Washington"
         ]
       },
       {
         "name": "Emmanuel Derivery",
         "orcid": "https://orcid.org/0000-0003-3927-5944",
         "institutions": [
-          "MRC Laboratory of Molecular Biology",
-          "The Francis Crick Institute"
+          "MRC Laboratory of Molecular Biology"
         ]
       }
     ]
@@ -219,9 +217,7 @@
       {
         "name": "Ariel J. Ben‐Sasson",
         "orcid": "https://orcid.org/0000-0003-3395-6327",
-        "institutions": [
-          "University of Haifa"
-        ]
+        "institutions": []
       },
       {
         "name": "Eldad Haber",
@@ -265,10 +261,7 @@
       {
         "name": "Ariel J. Ben‐Sasson",
         "orcid": "https://orcid.org/0000-0003-3395-6327",
-        "institutions": [
-          "Ariel University",
-          "University of Haifa"
-        ]
+        "institutions": []
       }
     ]
   },
@@ -281,12 +274,12 @@
     "type": "article",
     "doi": "https://doi.org/10.1038/s41586-020-03120-8",
     "url": "https://doi.org/10.1038/s41586-020-03120-8",
-    "cited_by_count": 146,
+    "cited_by_count": 147,
     "counts_by_year": {
       "2026": 12,
       "2025": 23,
       "2024": 26,
-      "2023": 26,
+      "2023": 27,
       "2022": 31,
       "2021": 28
     },
@@ -522,9 +515,7 @@
       {
         "name": "Antonio F. Facchetti",
         "orcid": "https://orcid.org/0000-0002-8175-7958",
-        "institutions": [
-          "Kyocera (United States)"
-        ]
+        "institutions": []
       },
       {
         "name": "Gil Markovich",

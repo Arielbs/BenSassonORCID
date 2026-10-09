@@ -8,10 +8,11 @@
     "type": "article",
     "doi": "https://doi.org/10.1073/pnas.2422787122",
     "url": "https://doi.org/10.1073/pnas.2422787122",
-    "cited_by_count": 8,
+    "cited_by_count": 10,
     "counts_by_year": {
       "2026": 4,
-      "2025": 4
+      "2025": 5,
+      "2024": 1
     },
     "topic": "T-cell and B-cell Immunology",
     "subfield": "Immunology",
@@ -81,15 +82,15 @@
     "type": "article",
     "doi": "https://doi.org/10.1016/j.cell.2023.08.034",
     "url": "https://doi.org/10.1016/j.cell.2023.08.034",
-    "cited_by_count": 36,
+    "cited_by_count": 34,
     "counts_by_year": {
       "2026": 10,
       "2025": 10,
-      "2024": 16
+      "2024": 14
     },
-    "topic": "Plant Molecular Biology Research",
-    "subfield": "Plant Science",
-    "field": "Agricultural and Biological Sciences",
+    "topic": "Microtubule and mitosis dynamics",
+    "subfield": "Cell Biology",
+    "field": "Biochemistry, Genetics and Molecular Biology",
     "authors": [
       "Joseph L. Watson",
       "Lara K. Krüger",
@@ -185,11 +186,11 @@
     "type": "article",
     "doi": "https://doi.org/10.3390/biom13030457",
     "url": "https://doi.org/10.3390/biom13030457",
-    "cited_by_count": 15,
+    "cited_by_count": 14,
     "counts_by_year": {
       "2026": 5,
       "2025": 5,
-      "2024": 3,
+      "2024": 2,
       "2023": 2
     },
     "topic": "Protein Structure and Dynamics",
@@ -274,18 +275,18 @@
     "type": "article",
     "doi": "https://doi.org/10.1038/s41586-020-03120-8",
     "url": "https://doi.org/10.1038/s41586-020-03120-8",
-    "cited_by_count": 147,
+    "cited_by_count": 131,
     "counts_by_year": {
       "2026": 12,
       "2025": 23,
-      "2024": 26,
-      "2023": 27,
-      "2022": 31,
-      "2021": 28
+      "2024": 22,
+      "2023": 22,
+      "2022": 29,
+      "2021": 22
     },
-    "topic": "Monoclonal and Polyclonal Antibodies Research",
-    "subfield": "Radiology, Nuclear Medicine and Imaging",
-    "field": "Medicine",
+    "topic": "Supramolecular Self-Assembly in Materials",
+    "subfield": "Biomaterials",
+    "field": "Materials Science",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Joseph L. Watson",
@@ -619,7 +620,7 @@
       "2014": 2,
       "2013": 1
     },
-    "topic": "Semiconductor materials and devices",
+    "topic": "Organic Electronics and Photovoltaics",
     "subfield": "Electrical and Electronic Engineering",
     "field": "Engineering",
     "authors": [
@@ -968,9 +969,9 @@
       "2013": 4,
       "2012": 8
     },
-    "topic": "Block Copolymer Self-Assembly",
-    "subfield": "Materials Chemistry",
-    "field": "Materials Science",
+    "topic": "Organic Electronics and Photovoltaics",
+    "subfield": "Electrical and Electronic Engineering",
+    "field": "Engineering",
     "authors": [
       "Ariel J. Ben‐Sasson",
       "Eran Avnon",
@@ -1043,9 +1044,9 @@
     "url": "https://doi.org/10.1149/ma2009-02/28/2248",
     "cited_by_count": 0,
     "counts_by_year": {},
-    "topic": "Manufacturing Process and Optimization",
-    "subfield": "Industrial and Manufacturing Engineering",
-    "field": "Engineering",
+    "topic": "Advanced Materials and Semiconductor Technologies",
+    "subfield": "Materials Chemistry",
+    "field": "Materials Science",
     "authors": [
       "Nir Tessler",
       "Ariel J. Ben‐Sasson",

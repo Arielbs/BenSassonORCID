@@ -82,10 +82,10 @@
     "type": "article",
     "doi": "https://doi.org/10.1016/j.cell.2023.08.034",
     "url": "https://doi.org/10.1016/j.cell.2023.08.034",
-    "cited_by_count": 34,
+    "cited_by_count": 32,
     "counts_by_year": {
-      "2026": 10,
-      "2025": 10,
+      "2026": 9,
+      "2025": 9,
       "2024": 14
     },
     "topic": "Microtubule and mitosis dynamics",
@@ -275,13 +275,13 @@
     "type": "article",
     "doi": "https://doi.org/10.1038/s41586-020-03120-8",
     "url": "https://doi.org/10.1038/s41586-020-03120-8",
-    "cited_by_count": 131,
+    "cited_by_count": 129,
     "counts_by_year": {
       "2026": 12,
       "2025": 23,
-      "2024": 22,
+      "2024": 21,
       "2023": 22,
-      "2022": 29,
+      "2022": 28,
       "2021": 22
     },
     "topic": "Supramolecular Self-Assembly in Materials",
@@ -305,7 +305,7 @@
       "Greg L. Hura",
       "James J. De Yoreo",
       "Justin M. Kollman",
-      "Hannele Ruohola‐Baker",
+      "David A. Baker",
       "Emmanuel Derivery",
       "David A. Baker"
     ],
@@ -433,8 +433,8 @@
         ]
       },
       {
-        "name": "Hannele Ruohola‐Baker",
-        "orcid": "https://orcid.org/0000-0002-5588-4531",
+        "name": "David A. Baker",
+        "orcid": "https://orcid.org/0000-0001-7896-6217",
         "institutions": [
           "University of Washington"
         ]
@@ -1052,7 +1052,7 @@
       "Ariel J. Ben‐Sasson",
       "Nir Yaacobi",
       "Eran Avnon",
-      "Michal Soreni",
+      "Michal Soreni‐Harari",
       "Yoav Eichen"
     ],
     "authorships": [
@@ -1085,7 +1085,7 @@
         ]
       },
       {
-        "name": "Michal Soreni",
+        "name": "Michal Soreni‐Harari",
         "orcid": null,
         "institutions": [
           "Technion – Israel Institute of Technology"

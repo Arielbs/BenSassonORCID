@@ -10,8 +10,8 @@
     "url": "https://doi.org/10.1073/pnas.2422787122",
     "cited_by_count": 10,
     "counts_by_year": {
-      "2026": 4,
-      "2025": 5,
+      "2026": 5,
+      "2025": 4,
       "2024": 1
     },
     "topic": "T-cell and B-cell Immunology",
@@ -82,11 +82,11 @@
     "type": "article",
     "doi": "https://doi.org/10.1016/j.cell.2023.08.034",
     "url": "https://doi.org/10.1016/j.cell.2023.08.034",
-    "cited_by_count": 32,
+    "cited_by_count": 38,
     "counts_by_year": {
-      "2026": 9,
-      "2025": 9,
-      "2024": 14
+      "2026": 13,
+      "2025": 10,
+      "2024": 15
     },
     "topic": "Microtubule and mitosis dynamics",
     "subfield": "Cell Biology",
@@ -222,7 +222,7 @@
       },
       {
         "name": "Eldad Haber",
-        "orcid": "https://orcid.org/0009-0008-1000-604X",
+        "orcid": "https://orcid.org/0000-0001-5996-4574",
         "institutions": [
           "University of British Columbia"
         ]
@@ -275,14 +275,14 @@
     "type": "article",
     "doi": "https://doi.org/10.1038/s41586-020-03120-8",
     "url": "https://doi.org/10.1038/s41586-020-03120-8",
-    "cited_by_count": 129,
+    "cited_by_count": 125,
     "counts_by_year": {
-      "2026": 12,
-      "2025": 23,
+      "2026": 13,
+      "2025": 22,
       "2024": 21,
       "2023": 22,
-      "2022": 28,
-      "2021": 22
+      "2022": 25,
+      "2021": 21
     },
     "topic": "Supramolecular Self-Assembly in Materials",
     "subfield": "Biomaterials",
@@ -853,14 +853,14 @@
     "type": "article",
     "doi": "https://doi.org/10.1063/1.3622291",
     "url": "https://doi.org/10.1063/1.3622291",
-    "cited_by_count": 79,
+    "cited_by_count": 78,
     "counts_by_year": {
       "2026": 4,
       "2025": 3,
       "2024": 4,
       "2023": 9,
       "2022": 4,
-      "2021": 4,
+      "2021": 3,
       "2020": 8,
       "2019": 6,
       "2018": 7,
@@ -904,11 +904,10 @@
     "type": "conference-paper",
     "doi": "https://doi.org/10.1117/12.893455",
     "url": "https://doi.org/10.1117/12.893455",
-    "cited_by_count": 19,
+    "cited_by_count": 18,
     "counts_by_year": {
       "2024": 2,
       "2022": 1,
-      "2021": 1,
       "2020": 1,
       "2019": 2,
       "2017": 3,
@@ -951,14 +950,14 @@
     "type": "article",
     "doi": "https://doi.org/10.1063/1.3266855",
     "url": "https://doi.org/10.1063/1.3266855",
-    "cited_by_count": 95,
+    "cited_by_count": 94,
     "counts_by_year": {
       "2026": 3,
       "2025": 4,
       "2024": 2,
       "2023": 3,
       "2022": 9,
-      "2021": 5,
+      "2021": 4,
       "2020": 8,
       "2019": 4,
       "2018": 11,
